@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MouseKeyBoard.h">
+    <ClInclude Include="GDI_Basic.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="framework.h">
@@ -36,12 +36,9 @@
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="CtrackWnd.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MouseKeyBoard.cpp">
+    <ClCompile Include="GDI_Basic.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="MainFrm.cpp">
@@ -53,25 +50,19 @@
     <ClCompile Include="pch.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CtrackWnd.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="MouseKeyBoard.rc">
+    <ResourceCompile Include="GDIBasic.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\MouseKeyBoard.rc2">
-      <Filter>리소스 파일</Filter>
-    </None>
-    <None Include="res\cursor1.cur">
+    <None Include="res\GDIBasic.rc2">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MouseKeyBoard.ico">
+    <Image Include="res\GDI_Basic.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>

@@ -20,9 +20,9 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{5C869030-6FBB-4E04-AAA4-FA809786DA90}</ProjectGuid>
+    <ProjectGuid>{BBE9938B-62DB-40F1-A5AA-B04F1CE4F326}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
-    <RootNamespace>MouseKeyBoard</RootNamespace>
+    <RootNamespace>GDIBasic</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -184,19 +184,17 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ChildView.h" />
-    <ClInclude Include="CtrackWnd.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="GDI_Basic.h" />
     <ClInclude Include="MainFrm.h" />
-    <ClInclude Include="MouseKeyBoard.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChildView.cpp" />
-    <ClCompile Include="CtrackWnd.cpp" />
+    <ClCompile Include="GDI_Basic.cpp" />
     <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="MouseKeyBoard.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -205,14 +203,13 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="MouseKeyBoard.rc" />
+    <ResourceCompile Include="GDIBasic.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\cursor1.cur" />
-    <None Include="res\MouseKeyBoard.rc2" />
+    <None Include="res\GDIBasic.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MouseKeyBoard.ico" />
+    <Image Include="res\GDI_Basic.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

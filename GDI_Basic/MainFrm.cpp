@@ -4,7 +4,7 @@
 
 #include "pch.h"
 #include "framework.h"
-#include "MouseKeyBoard.h"
+#include "GDI_Basic.h"
 
 #include "MainFrm.h"
 
@@ -19,7 +19,6 @@ IMPLEMENT_DYNAMIC(CMainFrame, CFrameWnd)
 BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_WM_CREATE()
 	ON_WM_SETFOCUS()
-	ON_WM_NCLBUTTONDOWN()
 END_MESSAGE_MAP()
 
 // CMainFrame 생성/소멸
@@ -54,9 +53,6 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 		return FALSE;
 	// TODO: CREATESTRUCT cs를 수정하여 여기에서
 	//  Window 클래스 또는 스타일을 수정합니다.
-
-	cs.cx = 200;
-	cs.cy = 100;
 
 	cs.dwExStyle &= ~WS_EX_CLIENTEDGE;
 	cs.lpszClass = AfxRegisterWndClass(0);
@@ -96,22 +92,3 @@ BOOL CMainFrame::OnCmdMsg(UINT nID, int nCode, void* pExtra, AFX_CMDHANDLERINFO*
 	return CFrameWnd::OnCmdMsg(nID, nCode, pExtra, pHandlerInfo);
 }
 
-
-
-void CMainFrame::OnNcLButtonDown(UINT nHitTest, CPoint point)
-{
-	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
-
-	//종료 버튼을 누른 경우에만 특별한 처리를 한다.
-	if (nHitTest == HTCLOSE)
-	{
-		MessageBox(_T("여기를 눌러도 종료할 수 없습니다."), _T("테스트"));
-	}
-	// 그 밖의 경우에는 운영체제가 자동으로 처리한다.
-	else
-	{
-		CFrameWnd::OnNcLButtonDown(nHitTest, point);
-	}
-
-	CFrameWnd::OnNcLButtonDown(nHitTest, point);
-}
