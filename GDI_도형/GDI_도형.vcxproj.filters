@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GDI_Basic.h">
+    <ClInclude Include="GDI_도형.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="framework.h">
@@ -38,7 +38,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GDI_Basic.cpp">
+    <ClCompile Include="GDI_도형.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="MainFrm.cpp">
@@ -52,26 +52,17 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="GDIBasic.rc">
+    <ResourceCompile Include="GDI.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\GDIBasic.rc2">
+    <None Include="res\GDI.rc2">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\GDI_Basic.ico">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Desktop\45908.jpg">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\ImageToStl.com_45908.bmp">
-      <Filter>리소스 파일</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Desktop\source\VS2019\Chapter04\Bitmaps\res\bitmap1.bmp">
+    <Image Include="res\GDI_도형.ico">
       <Filter>리소스 파일</Filter>
     </Image>
   </ItemGroup>
